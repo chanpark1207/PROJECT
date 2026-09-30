@@ -1,0 +1,151 @@
+.mypage-user-box{
+
+    background:white;
+
+    padding:24px;
+
+    border-radius:16px;
+
+    margin-bottom:32px;
+}
+
+.mypage-user-box h2{
+
+    font-size:24px;
+
+    margin-bottom:8px;
+}
+
+.mypage-user-box p{
+
+    color:#6b7280;
+
+    font-size:15px;
+}
+
+.mypage-box{
+
+    background:white;
+
+    padding:24px;
+
+    border-radius:16px;
+
+    margin-bottom:32px;
+}
+
+.mypage-title{
+
+    font-size:24px;
+
+    margin-bottom:20px;
+}
+
+.mypage-table{
+
+    width:100%;
+
+    table-layout:fixed;
+
+    border-collapse:collapse;
+}
+
+.mypage-table th,
+.mypage-table td{
+
+    border-bottom:1px solid #e5e7eb;
+
+    padding:14px;
+
+    text-align:center;
+}
+
+.mypage-table th{
+
+    background:#f8fafc;
+
+    font-weight:700;
+}
+
+.mypage-table a{
+
+    text-decoration:none;
+
+    color:black;
+}
+
+.mypage-table button{
+
+    border:none;
+
+    background:#ef4444;
+
+    color:white;
+
+    padding:6px 10px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+}
+.mypage-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.page-title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.post-write-btn {
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:14px 24px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    font-size:18px;
+
+    display:inline-block;
+}
+
+.mypage-title-row {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:16px;
+}
+
+.mypage-title-row .board-title{
+    margin-bottom:0;
+}
+
+.mypage-table th:nth-child(1),
+.mypage-table td:nth-child(1) {
+    width: 10%;
+}
+
+.mypage-table th:nth-child(2),
+.mypage-table td:nth-child(2) {
+    width: 45%;
+}
+
+.mypage-table th:nth-child(3),
+.mypage-table td:nth-child(3) {
+    width: 25%;
+}
+
+.mypage-table th:nth-child(4),
+.mypage-table td:nth-child(4) {
+    width: 20%;
+}

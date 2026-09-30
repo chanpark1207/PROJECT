@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusLost</title>
+
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+<body>
+<header class="cl-header">
+
+    <div class="cl-header-left">
+        <div class="cl-header-logo-box">
+            <img src="/images/logo.png" alt="CampusLost 로고">
+        </div>
+        <div class="cl-header-title-box">
+            강남대학교 분실물 시스템
+        </div>
+    </div>
+
+    <div class="cl-header-right">
+        {{! 로그인 안 한 경우}}
+        {{^loginUser}}
+            <a href="/login" class="cl-header-login-text">
+                로그인
+            </a>
+        {{/loginUser}}
+
+        {{! 로그인 한 경우}}
+        {{#loginUser}}
+            <a href="/logout" class="cl-header-login-text">
+                로그아웃
+            </a>
+        {{/loginUser}}
+
+    </div>
+
+</header>

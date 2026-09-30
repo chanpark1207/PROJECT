@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8ab35fdf-4d64-4a51-afb5-4ee0876e1108" name="변경" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="보안 분석" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="3DsG2itUZU2HtZzrunbYGeyddJh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build campuslost.executor": "Run",
+    "Gradle.campuslost 빌드.executor": "Run",
+    "Gradle.lost 빌드.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.CampuslostApplication.executor": "Run",
+    "Spring Boot.LostApplication.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/cypar/Desktop/Springboot/campuslost",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="CampuslostApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="campuslost.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.campuslost.CampuslostApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.138" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="8ab35fdf-4d64-4a51-afb5-4ee0876e1108" name="변경" comment="" />
+      <created>1779063159347</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779063159347</updated>
+      <workItem from="1779063160599" duration="1107000" />
+      <workItem from="1779160562449" duration="914000" />
+      <workItem from="1779161639214" duration="4320000" />
+      <workItem from="1779188725173" duration="7155000" />
+      <workItem from="1779196583501" duration="170000" />
+      <workItem from="1779196871068" duration="594000" />
+      <workItem from="1779199921957" duration="788000" />
+      <workItem from="1779245236158" duration="779000" />
+      <workItem from="1779246272686" duration="2825000" />
+      <workItem from="1779256009227" duration="1891000" />
+      <workItem from="1779339685536" duration="6949000" />
+      <workItem from="1779412820671" duration="1618000" />
+      <workItem from="1779543429752" duration="335000" />
+      <workItem from="1779547044973" duration="2376000" />
+      <workItem from="1779751919935" duration="9633000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

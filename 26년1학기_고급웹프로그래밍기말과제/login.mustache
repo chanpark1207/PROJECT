@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="/css/border.css">
+
+{{>layouts/header}}
+
+<div class="cl-page-layout">
+
+    {{>layouts/nav}}
+
+    <main class="cl-main-content">
+
+        <div class="login-container">
+
+            <h2 class="board-title">로그인</h2>
+
+            <form action="/login" method="post" class="login-form">
+
+                <input type="text"
+                       name="userId"
+                       placeholder="학번 입력"
+                       required>
+
+                <input type="password"
+                       name="password"
+                       placeholder="비밀번호 입력"
+                       required>
+
+                <button type="submit">
+                    로그인
+                </button>
+
+            </form>
+
+            {{#error}}
+                <p class="login-error">{{error}}</p>
+            {{/error}}
+
+        </div>
+
+    </main>
+
+</div>
+
+{{>layouts/footer}}

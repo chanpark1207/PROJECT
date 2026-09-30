@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="/css/detail.css">
+
+{{>layouts/header}}
+
+<div class="cl-page-layout">
+
+    {{>layouts/nav}}
+
+    <main class="cl-main-content">
+
+        {{#post}}
+            <section class="detail-box">
+
+                <div class="detail-header">
+                    <h2 class="detail-title">{{title}}</h2>
+                    <span class="detail-date">{{formattedCreatedAt}}</span>
+                </div>
+
+                <div class="detail-info">
+                    <p><strong>작성자</strong> {{userId}}</p>
+                    <p><strong>물건 종류</strong> {{category}}</p>
+                    <p><strong>장소</strong> {{location}}</p>
+                </div>
+
+                <div class="detail-image-area">
+                    {{#image}}
+                        <img src="{{image}}" alt="게시글 이미지" class="detail-image">
+                    {{/image}}
+                    {{^image}}
+                        <p style="text-align: center; color: #999;">이미지가 없습니다.</p>
+                    {{/image}}
+                </div>
+
+                <div class="detail-content">
+                    <h3>상세 내용</h3>
+                    <p>{{content}}</p>
+                </div>
+
+            </section>
+
+            <hr>
+
+            <section class="comment-section">
+
+                <h3>댓글</h3>
+
+                {{#comments}}
+                    <div class="comment-box">
+                        <p><strong>익명</strong></p>
+                        <p>{{content}}</p>
+                        <small>{{formattedCreatedAt}}</small>
+                    </div>
+                {{/comments}}
+
+                {{^comments}}
+                    <p>아직 댓글이 없습니다.</p>
+                {{/comments}}
+
+                <hr>
+
+                <form action="/comment" method="post" class="comment-form">
+                    <input type="hidden" name="postId" value="{{numbers}}">
+                    <textarea name="content" placeholder="댓글을 입력하세요" required></textarea>
+                    <button type="submit">댓글 작성</button>
+                </form>
+
+            </section>
+        {{/post}}
+
+        {{^post}}
+            <div style="text-align: center; padding: 40px;">
+                <h2>게시글을 찾을 수 없습니다.</h2>
+                <p>삭제되었거나 존재하지 않는 게시글입니다.</p>
+                <a href="/lost" style="color: #007bff; text-decoration: none;">분실물 목록으로 돌아가기</a>
+            </div>
+        {{/post}}
+
+    </main>
+
+</div>
+
+{{>layouts/footer}}

@@ -1,0 +1,209 @@
+<link rel="stylesheet" href="/css/border.css">
+
+<link rel="stylesheet" href="/css/mypages.css">
+
+{{>layouts/header}}
+
+<div class="cl-page-layout">
+
+    {{>layouts/nav}}
+
+    <main class="cl-main-content">
+
+        <div class="mypage-user-box">
+
+            <h2>{{loginUser}}님 환영합니다</h2>
+
+            <p>
+                내가 작성한 게시글과 댓글을 관리할 수 있습니다.
+            </p>
+
+        </div>
+        <br>
+        
+        <div class="mypage-top">
+            <h2 class="board-title">내 게시글</h2>
+
+            <a href="/post" class="post-write-btn">
+                등록하기
+            </a>
+        </div>
+
+        <!-- 분실물 -->
+
+        <section class="mypage-box">
+
+            <h2 class="board-title">분실물</h2>
+
+            <table class="mypage-table">
+
+                <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>작성일</th>
+                    <th>관리</th>
+                </tr>
+                </thead>
+
+                <tbody>
+
+                {{#myLostPosts}}
+                    <tr>
+
+                        <td>{{displayNumber}}</td>
+
+                        <td>
+                            <a href="/post/{{numbers}}">
+                                {{title}}
+                            </a>
+                        </td>
+
+                        <td>{{formattedCreatedAt}}</td>
+
+                        <td>
+
+                            <a href="/post/{{numbers}}/edit">
+                                수정
+                            </a>
+
+                            <form action="/post/{{numbers}}/delete"
+                                  method="post"
+                                  style="display:inline;">
+
+                                <button type="submit">
+                                    삭제
+                                </button>
+
+                            </form>
+
+                        </td>
+
+                    </tr>
+                {{/myLostPosts}}
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- 습득물 -->
+
+        <section class="mypage-box">
+
+            <h2 class="board-title">습득물</h2>
+
+            <table class="mypage-table">
+
+                <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>작성일</th>
+                    <th>관리</th>
+                </tr>
+                </thead>
+
+                <tbody>
+
+                {{#myFoundPosts}}
+                    <tr>
+
+                        <td>{{displayNumber}}</td>
+
+                        <td>
+                            <a href="/post/{{numbers}}">
+                                {{title}}
+                            </a>
+                        </td>
+
+                        <td>{{formattedCreatedAt}}</td>
+
+                        <td>
+
+                            <a href="/post/{{numbers}}/edit">
+                                수정
+                            </a>
+
+                            <form action="/post/{{numbers}}/delete"
+                                  method="post"
+                                  style="display:inline;">
+
+                                <button type="submit">
+                                    삭제
+                                </button>
+
+                            </form>
+
+                        </td>
+
+                    </tr>
+                {{/myFoundPosts}}
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- 댓글 -->
+
+        <section class="mypage-box">
+
+            <div class="mypage-title-row">
+                <h2 class="board-title">댓글</h2>
+            </div>
+
+            <table class="mypage-table">
+
+                <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>내용</th>
+                    <th>작성일</th>
+                    <th>관리</th>
+                </tr>
+                </thead>
+
+                <tbody>
+
+                {{#myComments}}
+                    <tr>
+                        <td>{{displayNumber}}</td>
+
+                        <td>{{content}}</td>
+
+                        <td>{{formattedCreatedAt}}</td>
+
+                        <td>
+                            <a href="/comment/{{id}}/edit">
+                                수정
+                            </a>
+
+                            <form action="/comment/{{id}}/delete"
+                                  method="post"
+                                  style="display:inline;">
+
+                                <button type="submit">
+                                    삭제
+                                </button>
+
+                            </form>
+                        </td>
+                    </tr>
+                {{/myComments}}
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+{{>layouts/footer}}

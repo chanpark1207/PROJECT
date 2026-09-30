@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="/css/main.css">
+
+{{>layouts/header}}
+
+<div class="cl-page-layout">
+
+    {{>layouts/nav}}
+
+    <main class="cl-main-content">
+
+        <section class="home-intro-box">
+
+            <h1 class="home-intro-title">
+                “강남대학교 분실물 시스템”
+            </h1>
+
+            <p class="home-intro-text">
+                교내 분실물 정보를 확인하세요
+            </p>
+            <div class="home-preview-section">
+
+                <div class="preview-card">
+
+                    <div class="preview-header">
+                        <h2 class="preview-title">최근 분실물</h2>
+
+                        <div class="preview-header-right">
+                            <span class="post-count">{{lostCount}}개</span>
+                            <a href="/lost" class="more-link">더보기 →</a>
+                        </div>
+                    </div>
+
+                    <div class="preview-list">
+
+                        {{#recentLostPosts}}
+                            <a href="/post/{{numbers}}" class="preview-item">
+
+                                {{#image}}
+                                    <img src="{{image}}" class="preview-image" alt="분실물 이미지">
+                                {{/image}}
+
+                                <p class="preview-item-title">
+                                    {{title}}
+                                </p>
+                                <p class="preview-item-date">
+                                    {{formattedDate}}
+                                </p>
+
+                            </a>
+                        {{/recentLostPosts}}
+
+                    </div>
+
+                </div>
+
+                <div class="preview-card">
+
+                    <div class="preview-header">
+                        <h2 class="preview-title">최근 습득물</h2>
+
+                        <div class="preview-header-right">
+                            <span class="post-count">{{foundCount}}개</span>
+                            <a href="/found" class="more-link">더보기 →</a>
+                        </div>
+                    </div>
+
+                    <div class="preview-list">
+
+                        {{#recentFoundPosts}}
+                            <a href="/post/{{numbers}}" class="preview-item">
+
+                                {{#image}}
+                                    <img src="{{image}}" class="preview-image" alt="습득물 이미지">
+                                {{/image}}
+
+                                <p class="preview-item-title">
+                                    {{title}}
+                                </p>
+                                <p class="preview-item-date">
+                                    {{formattedDate}}
+                                </p>
+
+                            </a>
+                        {{/recentFoundPosts}}
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+</div>
+
+{{>layouts/footer}}
