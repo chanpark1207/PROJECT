@@ -1,0 +1,64 @@
+select * from LOGINS;
+select * from COURSES;
+select * from APPLIED_COURSES;
+
+drop table LOGINS;
+drop table COURSES;
+drop table APPLIED_COURSES
+
+
+
+CREATE TABLE LOGINS(
+    STUDENT_ID INT PRIMARY KEY AUTO_INCREMENT,
+    USERID VARCHAR(50) NOT NULL,
+    PASSWORD VARCHAR(50) NOT NULL,
+    NAME VARCHAR(50) NOT NULL,
+    MAJOR VARCHAR(50) NOT NULL,
+    GRADE INT NOT NULL
+);
+
+CREATE TABLE APPLIED_COURSES (
+    NUMBER          CHARACTER VARYING(10)  NOT NULL,
+    A_DIVISION      CHARACTER VARYING(10)  NOT NULL,
+    A_CREDITS       INT,
+    A_TIME          CHARACTER VARYING(10)  NOT NULL,
+    A_ID            CHARACTER VARYING(10)  NOT NULL,
+    A_NAME          CHARACTER VARYING(50)  NOT NULL,
+    A_PROFESSOR     CHARACTER VARYING(20),
+    A_RATING        CHARACTER VARYING(10)
+);
+
+CREATE TABLE COURSES (
+    ID VARCHAR(10) PRIMARY KEY,
+    DIVISION VARCHAR(20),
+    CREDITS INT,
+    TIME CHARACTER VARYING(10)  NOT NULL,
+    NAME VARCHAR(50),
+    PROFESSOR VARCHAR(20),
+    RATING VARCHAR(10)
+);
+
+
+INSERT INTO COURSES(ID, DIVISION, CREDITS, TIME, NAME, PROFESSOR, RATING) VALUES
+('CS30001', '전공필수', 3, 1.2, '객체지향프로그래밍', '김지환', '★★★★★'),
+('CS30002', '전공필수', 2, 1.4, '운영체제', '박서준', '★★★★☆'),
+('CS30003', '전공선택', 3, 2.1, '네트워크개론', '최민혁', '★★★☆☆'),
+('CS30004', '전공선택', 1, 2.3, '자료구조심화', '이도윤', '★★★★★'),
+('CS30005', '전공필수', 3, 2.5, '컴퓨터구조', '정하늘', '★★★★☆'),
+('CS30006', '전공선택', 2, 3.1, '웹프로그래밍', '오세훈', '★★★★☆'),
+('CS30007', '전공선택', 3, 3.4, '모바일앱개발', '홍재민', '★★★☆☆'),
+('CS30008', '전공선택', 1, 3.5, '정보보안개론', '강지후', '★★☆☆☆'),
+('CS30009', '기초교양', 2, 1.1, '글쓰기실습', '김하늘', '★★★★☆'),
+('CS30010', '기초교양', 3, 4.2, '심리학입문', '정다인', '★★★★★'),
+('CS30011', '교양선택', 1, 4.3, '경제학의이해', '박지훈', '★★★☆☆'),
+('CS30012', '교양선택', 3, 4.5, '철학의이해', '서은호', '★★★★☆'),
+('CS30013', '전공필수', 2, 5.1, '알고리즘', '문태준', '★★★★★'),
+('CS30014', '전공선택', 3, 5.2, '데이터마이닝', '이서율', '★★★★☆'),
+('CS30015', '전공선택', 2, 2.4, '인공지능개론', '조하림', '★★★☆☆'),
+('CS30016', '전공선택', 3, 3.3, '머신러닝', '유성민', '★★★★☆'),
+('CS30017', '전공필수', 1, 1.5, '소프트웨어공학', '한유진', '★★★☆☆'),
+('CS30018', '전공선택', 3, 5.4, '클라우드컴퓨팅', '김나율', '★★★★☆'),
+('CS30019', '전공선택', 2, 4.1, '게임프로그래밍입문', '박현성', '★★★☆☆'),
+('CS30020', '교양선택', 1, 3.2, '생활영어회화', '최라온', '★★★☆☆');
+
+
